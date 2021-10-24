@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>
+</head>
+<style>
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+#panel{
+    flex:1;
+    text-align: center;
+    background-color:#57667d;
+    padding: 1vw;
+    color: white;
+}
+p{
+    text-align: start;
+}
+input{
+    border: none;
+    border-bottom: white solid;
+    background-color: #57667d;
+    outline: none;
+    color:white;
+}
+#theta2{
+    margin-bottom: 1vw;
+}
+#draw{
+    border: none;
+    width: 80%;
+    height: 3%;
+    background-color: white;
+}
+#container{
+    flex: 10;
+}
+</style>
+
+<body>
+    <div id="panel">
+        <p>n</p><input id="n" type="number">
+        <p>d</p><input id="d" type="number">
+        <p>theta1</p><input id="theta1" type="number">
+        <p>theta2</p><input id="theta2" type="number">
+        <button id="draw">Draw</button>
+    </div>
+    <div id="container"></div>
+    <script type="text/javascript" src="probability.js">
+    </script>
+</body>
+
+</html>
